@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./key 6.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+            Authentication</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" onclick="home()">Home</a>
+              </li>
+              </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="signUp()">Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sign In</a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container text-center">
+        <div id="home">
+       <h1 class="display-4 mt-2">Authentication</h1>
+       <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum illo praesentium commodi tenetur minima officiis nemo dolorem totam est repellendus quis provident necessitatibus suscipit, consequatur saepe exercitationem fugit at repellat, neque laudantium minus iusto. Pariatur soluta placeat omnis incidunt repudiandae dolor consectetur enim culpa aliquam facere quisquam, inventore, ad odit!</p>
+      <div class="description">
+       <img src="./key 6.png" width="200" height="200">
+      <div class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat adipisci deserunt sit nemo magnam perspiciatis, similique quas iusto nihil architecto vitae temporibus ex esse atque cum quia. Vitae ipsam illum dignissimos? Placeat, eum dignissimos impedit molestias temporibus officiis quos delectus dolorem enim dolores exercitationem doloremque? Tempore molestias ad repellendus error?</div></div>
+       <p class="lead mt4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt distinctio, adipisci harum ab voluptates culpa voluptate quas. Rerum eos natus quibusdam sapiente deserunt soluta ea consequatur consequuntur blanditiis porro voluptas aperiam quaerat accusantium hic iure libero accusamus itaque asperiores cumque ipsa impedit nemo, iste illo reiciendis. Similique quod blanditiis voluptas. Dolorum ducimus quia pariatur sint cupiditate exercitationem porro earum, dicta molestias itaque voluptatibus veritatis. Libero neque nemo autem quisquam quis architecto rem assumenda et iusto excepturi. Quo assumenda dolore laudantium?</p>
+      </div>
+      <div id="sign-up">
+        <form class="row g-3" id="sign-up-form">
+          <h1 class="display-4 form-title" style="text-align: center;">Sign Up</h1>
+          <div class="col-md-6">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01"  required>
+            
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02"  required>
+            
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustomUsername" class="form-label">Email</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustomUsername" class="form-label">PhoneNumber</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">+91</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom01" class="form-label">Password</label>
+            <input type="password" class="form-control" id="validationCustom01"  required>
+            
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="validationCustom02"  required>
+            
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+          <div class="col-12" >
+            <div class="form-check" style="text-align :left;">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-dark" type="submit">Sign Up</button>
+          </div>
+        </form>
+      </div>
+      <div id="sign-in">
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    padding: 20px;
+}
+
+#sign-up {
+    display: none;
+}
+
+#sign-up-form {
+    width: 700px;
+   margin: auto;   
+}
+.form-title{
+    font-size: 2.5em;
+}
